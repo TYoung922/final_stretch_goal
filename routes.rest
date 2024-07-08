@@ -1,0 +1,67 @@
+### get the root path /
+GET http://localhost:3000/ HTTP/1.1
+
+### get all students
+GET http://localhost:3000/students HTTP/1.1
+
+### get all students Render
+GET https://api-project-s2.onrender.com/ttech/ HTTP/1.1
+
+### get one student
+GET http://localhost:3000/students/667dd8e8cedfa4b13c8bad8e HTTP/1.1
+GET https://api-project-s2.onrender.com/students/667dd8e8cedfa4b13c8bad8e HTTP/1.1
+
+### create a student
+POST http://localhost:3000/students HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Ezio",
+    "lastName": "Auditore",
+    "email": "Templar@killer.com",
+    "age": 28,
+    "currentCollege": "Hidden ones Academy"
+}
+
+### create student render
+POST https://api-project-s2.onrender.com/students/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Ezio",
+    "lastName": "Auditore",
+    "email": "Templar@killer.com",
+    "age": 28,
+    "currentCollege": "Hidden ones Academy"
+}
+
+### update one student
+PATCH http://localhost:3000/students/66830b03a3fd4a274a3efaf4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Ezio",
+    "lastName": "Auditore",
+    "email": "Templarkiller@hiddenones.com",
+    "age": 32,
+    "currentCollege": "Assassin's Academy"
+}
+
+### update one student render
+PATCH https://api-project-s2.onrender.com/students/66830b03a3fd4a274a3efaf4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Ezio",
+    "lastName": "Auditore",
+    "email": "Templarkiller@hiddenones.com",
+    "age": 32,
+    "currentCollege": "Assassin's Academy"
+}
+
+### delete one student
+DELETE http://localhost:3000/students/66830b03a3fd4a274a3efaf4 HTTP/1.1
+
+### delete one student render
+DELETE https://api-project-s2.onrender.com/students/66830b03a3fd4a274a3efaf4 HTTP/1.1
+
