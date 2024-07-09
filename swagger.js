@@ -5,7 +5,7 @@ const doc = {
     title: "My Student API",
     description: "An API that shows students data.",
   },
-  host: "api-project-side2.onrender.com",
+  host: "final-stretch-goal.onrender.com",
   schemes: ["https"],
 };
 
